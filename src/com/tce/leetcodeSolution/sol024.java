@@ -7,7 +7,7 @@ package com.tce.leetcodeSolution;
  * 执行用时 :15 ms, 在所有 Java 提交中击败了10.20% 的用户
  * 内存消耗 :33.9 MB, 在所有 Java 提交中击败了91.13%的用户
  */
-public class sol24 {
+public class sol024 {
 	public ListNode swapPairs(ListNode head) {
 		// if(head.next==null||head==null) return head;顺序不一样都能报错的
 		if (head == null || head.next == null)
