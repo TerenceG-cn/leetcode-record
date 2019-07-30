@@ -1,15 +1,5 @@
 package com.tce.leetcodeSolution;
 
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode(int x) {
-		val = x;
-	}
-}
-
 /**
  * @author tce E-mail:
  * @version Create Time：2019年6月15日 下午5:19:51 
