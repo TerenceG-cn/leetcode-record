@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * ¸øÄãÒ»¸ö°üº¬ n ¸öÕûÊıµÄÊı×é?nums£¬ÅĞ¶Ï?nums?ÖĞÊÇ·ñ´æÔÚÈı¸öÔªËØ a£¬b£¬c £¬Ê¹µÃ?a + b + c = 0 £¿ÇëÄãÕÒ³öËùÓĞÂú×ãÌõ¼şÇÒ²»ÖØ¸´µÄÈıÔª×é¡£
+ * ç»™ä½ ä¸€ä¸ªåŒ…å« n ä¸ªæ•´æ•°çš„æ•°ç»„?numsï¼Œåˆ¤æ–­?nums?ä¸­æ˜¯å¦å­˜åœ¨ä¸‰ä¸ªå…ƒç´  aï¼Œbï¼Œc ï¼Œä½¿å¾—?a + b + c = 0 ï¼Ÿè¯·ä½ æ‰¾å‡ºæ‰€æœ‰æ»¡è¶³æ¡ä»¶ä¸”ä¸é‡å¤çš„ä¸‰å…ƒç»„ã€‚
  *
- * ×¢Òâ£º´ğ°¸ÖĞ²»¿ÉÒÔ°üº¬ÖØ¸´µÄÈıÔª×é¡£
- * Ìâ½â
+ * æ³¨æ„ï¼šç­”æ¡ˆä¸­ä¸å¯ä»¥åŒ…å«é‡å¤çš„ä¸‰å…ƒç»„ã€‚
+ * é¢˜è§£
  */
 public class sol015_b {
     public List<List<Integer>> threeSum(int[] nums) {
@@ -16,7 +16,7 @@ public class sol015_b {
         List<List<Integer>> ls = new ArrayList<>();
 
         for (int i = 0; i < nums.length - 2; i++) {
-            if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {  // Ìø¹ı¿ÉÄÜÖØ¸´µÄ´ğ°¸
+            if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {  // è·³è¿‡å¯èƒ½é‡å¤çš„ç­”æ¡ˆ
 
                 int l = i + 1, r = nums.length - 1, sum = 0 - nums[i];
                 while (l < r) {
@@ -27,7 +27,7 @@ public class sol015_b {
                         l++;
                         r--;
                     } else if (nums[l] + nums[r] < sum) {
-                        while (l < r && nums[l] == nums[l + 1]) l++;   // Ìø¹ıÖØ¸´Öµ
+                        while (l < r && nums[l] == nums[l + 1]) l++;   // è·³è¿‡é‡å¤å€¼
                         l++;
                     } else {
                         while (l < r && nums[r] == nums[r - 1]) r--;
