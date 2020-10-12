@@ -26,7 +26,7 @@ public class sol015 {
         int[] quick=new int[nums.length];
         System.arraycopy(nums, 0, quick, 0, nums.length);
         Quick(quick,0,quick.length-1);
-        //to do
+        //todo
 
 
         return null;
